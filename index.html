@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aditi Chan</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:"Comic Sans MS","Comic Sans",cursive;
+background:#212842;
+padding:80px 20px;
+-webkit-text-size-adjust:100%;
+}
+
+/* CENTER WRAPPER */
+.wrapper{
+display:flex;
+justify-content:center;
+width:100%;
+}
+
+/* BOARD */
+
+.board{
+position:relative;
+background:#F0E7D5;
+max-width:950px;
+width:100%;
+padding:70px;
+border-radius:18px;
+box-shadow:0 35px 80px rgba(0,0,0,0.25);
+color:#212842;
+overflow:hidden;
+}
+
+.board::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("pap.jpg");
+background-size:cover;
+background-repeat:repeat;
+opacity:0.1;
+pointer-events:none;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+margin-bottom:40px;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+padding:0;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:#212842;
+font-weight:600;
+}
+
+/* HERO */
+
+.hero h1{
+font-family:'Caveat',cursive;
+font-size:64px;
+margin-bottom:5px;
+}
+
+.highlight{
+color:#032C7D;
+text-decoration:underline;
+}
+
+.role{
+font-size:22px;
+margin-top:5px;
+}
+
+section{
+margin-top:70px;
+padding-top:35px;
+border-top:1px solid rgba(33,40,66,0.15);
+}
+
+h2{
+font-family:'Caveat',cursive;
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#212842;
+color:#F0E7D5;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.skill i{
+font-size:22px;
+margin-bottom:8px;
+display:block;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.project{
+background:rgb(205, 208, 189);
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project h3{
+margin-bottom:8px;
+}
+
+.github-btn{
+display:inline-block;
+margin-top:10px;
+padding:6px 14px;
+background:#032C7D;
+color:rgb(234,236,240);
+border-radius:6px;
+font-size:13px;
+text-decoration:none;
+}
+
+.contact p{
+margin:6px 0;
+}
+
+footer{
+margin-top:80px;
+font-size:14px;
+opacity:0.7;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+body{
+padding:40px 12px;
+}
+
+.board{
+padding:40px 25px;
+border-radius:14px;
+}
+
+.hero h1{
+font-size:42px;
+line-height:1.2;
+}
+
+.role{
+font-size:18px;
+}
+
+h2{
+font-size:28px;
+}
+
+.skills-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.projects{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="board">
+
+<nav>
+
+<h3>Aditi Chandrakar</h3>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#interests">Interests</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<h1>Hello, I am <span class="highlight">Aditi</span>!!</h1>
+
+<div class="role">Information Technology Student | Age: 20</div>
+
+</div>
+
+<section id="about">
+
+<h2>About</h2>
+
+<p>
+I'm an IT student who enjoys learning how software works and experimenting with small projects on the web. 
+I like building simple tools that solve everyday problems or make studying and working a little easier.
+<br>
+Most of the time I learn by trying things out, breaking them, and figuring out how to fix them again.
+For me, programming is mostly about curiosity and gradually improving with each project.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">
+<i class="fa-brands fa-python"></i>
+Python
+</div>
+
+<div class="skill">
+<i class="fa-brands fa-java"></i>
+Java
+</div>
+
+<div class="skill">
+<i class="fa-solid fa-code"></i>
+C++
+</div>
+
+<div class="skill">
+<i class="fa-brands fa-html5"></i>
+HTML/CSS
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>StudyMates</h3>
+
+<p>
+StudyMates is a AI-powered web-based tutoring platform designed to help students stay focused while studying.
+</p>
+
+<a href="#" class="github-btn">GitHub</a>
+
+</div>
+
+<div class="project">
+
+<h3>Mindlock</h3>
+
+<p>
+Mindlock is a small tool that tracks focus sessions and records when users switch away from their work.
+</p>
+
+<a href="#" class="github-btn">GitHub</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="interests">
+
+<h2>Interests & Inspiration</h2>
+
+<p>
+Outside of classes, I like exploring different parts of technology and seeing how things are built. 
+I'm especially interested in learning how applications work behind the scenes and experimenting with small tools or ideas on the web.
+<br>
+I also enjoy learning from things I use every day—apps, games, and websites—and trying to understand what makes them work well.
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>GitHub: github.com/zenomina</p>
+<p>Email: adiichandrakar@gmail.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 adiichan</p>
+
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>
